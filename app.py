@@ -4,7 +4,7 @@ from transformers import pipeline
 app = Flask(__name__)
 
 # Load the summarizer model
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="facebook/distilbart-cnn-12-6")
 
 @app.route('/')
 def index():
